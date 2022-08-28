@@ -3,7 +3,7 @@ import axios, { AxiosRequestConfig } from "axios"
 import { useEffect, useState } from "react"
 
 const api = axios.create({
-  baseURL: 'http://api.github.com'
+  baseURL: 'https://api.github.com'
 })
 
 export function useFetch<T = unknown>(url: string, options?: AxiosRequestConfig) {
